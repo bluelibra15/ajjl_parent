@@ -1,0 +1,39 @@
+
+spring:
+  #mysql数据库配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ajjldb?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: wujunjie15
+    type: com.alibaba.druid.pool.DruidDataSource
+  #Redis服务器IP地址
+  redis:
+    host: 127.0.0.1
+  #Redis服务器端口号
+    port: 6379
+  #Redis服务器最大活跃数
+    jedis:
+      pool:
+        max-active: 20
+  #Redis服务器最大空闲数
+        max-idle: 8
+  #Redis服务器最小空闲数
+        min-idle: 0
+  #Redis服务器链接最大超时20000
+        max-wait: 20000
+#mybatis配置
+mybatis:
+  type-aliases-package: com.ajjl.pojo
+  mapper-locations: mapper/*.xml
+
+#pageHelper分页插件配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+server:
+  port: 8888
+  max-http-header-size: 24KB
+

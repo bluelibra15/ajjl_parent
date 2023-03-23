@@ -1,0 +1,101 @@
+<!DOCTYPE html><html>
+<!--代码由www.magicalcoder.com可视化布局器拖拽生成 资源请自行下载到本地-->
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>element-由www.magicalcoder.com可视化布局器生成</title>
+<link href="https://lib.baomitu.com/element-ui/2.10.1/theme-chalk/index.css" rel="stylesheet"/>
+<link href="http://lowcode.magicalcoder.com/magicalcoder/assets/drag/ui/magicalcoder/1.1.0/magicalcoder.css" rel="stylesheet"/>
+<!-- 如果要兼容ie8及以前版本 请打开注释--> <!-- <script src="http://www.magicalcoder.com/assets/ui/element/2.10.1/browser.min.js"></script><script src="http://www.magicalcoder.com/assets/ui/element/2.10.1/browser-polyfill.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.3/json3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.6.0/echarts.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.6.0/extension/dataTool.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script src="https://lib.baomitu.com/element-ui/2.10.1/index.js"></script>
+<script src="http://www.magicalcoder.com/assets/js/common.js"></script>
+<script src="http://lowcode.magicalcoder.com/magicalcoder/assets/drag/ui/magicalcoder/1.1.0/magicalcoder.js"></script>
+<style>
+
+a:link { 
+color:#303133; 
+text-decoration:none; 
+} 
+a:visited { 
+color:#303133; 
+text-decoration:none; 
+} 
+a:hover { 
+color:#303133; 
+text-decoration:none; 
+} 
+a:active { 
+color:#303133; 
+text-decoration:none; 
+} 
+
+</style>
+
+</head>
+<body style="">
+<div id="magicalDragScene" class="mc-root mc-ui-absolute-pane" mcstyle="ab-unit:%;ab-unit-left:%;ab-unit-top:%;ab-unit-width:%;ab-unit-height:%"><template>
+	<div class="mc-ui-absolute-pane" style="border-top-width: 0px; background-color: rgb(30, 159, 255); opacity: 1; width: 100%; height: 20%; position: absolute;">
+		<i class="el-icon-s-tools" style="position: absolute; left: 2%; top: 22%; font-size: 83px; text-align: left; width: 36%; color: rgb(255, 255, 255); font-weight: bold; word-spacing: 0px;"></i>
+		<span class="mc-ui-geometry-char" style="height: 20px; width: 500px; position: absolute; left: 10%; top: 33%; color: rgb(255, 255, 255); font-size: 35px; font-weight: bold; text-align: left;">AJJL后台管理系统</span>
+	</div>
+	<div class="mc-ui-absolute-pane" style="background-color: rgb(255, 255, 255); width: 20%; height: 80%; left: 0%; top: 20%; position: absolute;" mcstyle="ab-unit:%;ab-unit-left:%;ab-unit-top:%;ab-unit-width:%;ab-unit-height:%">
+		<el-menu style="position: absolute; left: 2%; top: 1%; margin: 0px; border-top-width: 4px; width: 85%; height: 93%;" mode="vertical" text-color="#303133">
+			<el-submenu index="1">
+				<span class="magical-drag-tmp-submenu-name" slot="title">
+					<i class="el-icon-menu" v-if="true">卡密管理</i>
+				</span>
+				<a href="regCode.html" target="right">
+					<el-menu-item style="background-attachment: scroll;" index="1-1">
+					<i class="el-icon-zoom-in"></i>
+					卡密列表
+				</el-menu-item>
+				</a>
+			</el-submenu>
+		</el-menu>
+	</div>
+	<div class="mc-ui-absolute-pane" style="position: absolute; left: 15%; top: 20%; width: 85%; height: 80%; background-color: rgb(153, 153, 153); border-top-width: 0px; border-top-color: rgb(57, 61, 73); border-left-color: rgb(57, 61, 73);">
+		<iframe name="right" style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;" src="regCode.html" frameborder="0"></iframe>
+	</div>
+</template></div>
+<script>
+//ajax库采用axios
+//调试:打开浏览器控制台(F12),在代码中某行增加 debugger 即可调试
+var vueData = {tableList : [{}],/*别删我*/
+pageTotal : 100,/*别删我*/
+currentPage : 1};
+var vueMethod = {focus : function (e) {try {_t.fastKey.focusElem(e);}catch(e) {}},/*别删我*/
+_tabClick : function(){setTimeout(function(){new McECharts().render();},200)}};
+var vueMounted = function(){}
+/*注意以上代码由系统维护,非专业人士请勿修改*/
+var myMethod = {}
+for (var key in myMethod) {
+    vueMethod[key] = myMethod[key];
+}
+var myMounted = null
+if(myMounted!==null){vueMounted=myMounted;}
+var myData = {}
+/*把您定义的数据覆盖布局器自动识别的变量,考虑到兼容性，请下载查看head中重写的assign方法*/
+Object.assign(vueData, myData);
+var _t = this;
+var Ctor = Vue.extend({
+    //提前绑定的变量
+    data: function() {
+        return vueData;
+    },
+    //页面加载完 会执行方法 可以做一些初始化操作
+    mounted: vueMounted,
+    /*当前页面绑定的方法集合 与布局器节点一一映射即可 参照element ui文档*/
+    methods: vueMethod
+});
+new Ctor().$mount('#magicalDragScene');
+//echarts自动初始化
+new McECharts().render();
+
+</script>
+</body>
+
+</html>
